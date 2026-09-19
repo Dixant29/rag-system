@@ -30,9 +30,21 @@ This phase explores the internal mechanics of retrieval systems without relying 
 
 ---
 
+## ⚡ Phase 2: Advanced Retrieval (Underway)
+
+This phase upgrades the retrieval engine from lexical (word count) matching to semantic and hybrid retrieval.
+
+### Modules (Folder: `02_advanced_retrieval/`)
+
+1. **`01_dense_embeddings.py`**
+   * Dense Neural Semantic Embeddings using Google's `text-embedding-004` (768 dimensions).
+   * Solving the Out-of-Vocabulary (OOV) and semantic synonym gap that broke Naive RAG.
+
+---
+
 ## 🛣️ Roadmap
 
 - [x] **Phase 1: Naive RAG** (Pure Python foundations)
-- [ ] **Phase 2: Advanced Retrieval** (Dense Embeddings, Vector DBs, BM25 Hybrid Search, Cross-Encoder Re-ranking)
+- [ ] **Phase 2: Advanced Retrieval** (Dense Embeddings, Multi-Query, Hybrid BM25, Cross-Encoder Re-ranking)
 - [ ] **Phase 3: Agentic RAG** (Self-reflective loops, Query rewriting, Tool use)
 

@@ -122,9 +122,9 @@ if __name__ == "__main__":
     print(f"chunk vectors created")
 
     # retrieve
-    user_query = "What were the names of the Apollo 11 modules?"
+    user_query = "What were the names of the Apollo 11 modules"    
     print(f'User query: {user_query}')
-    top_k = 3
+    top_k = 5
     print(f'Gettign top {top_k} chunks')
     top_matches = retrieve_top_k(user_query,chunks,chunk_vectors,vocab,idf,top_k)
     for rank, (score, text) in enumerate(top_matches):
