@@ -1,0 +1,37 @@
+# RAG System: From Scratch to Advanced
+
+A pedagogical, step-by-step implementation of Retrieval-Augmented Generation (RAG) built from first principles in Python.
+
+---
+
+## 🚀 Phase 1: Naive RAG (From Scratch)
+
+This phase explores the internal mechanics of retrieval systems without relying on high-level frameworks like LangChain or LlamaIndex.
+
+### Modules (Folder: `01_naive_rag/`)
+
+1. **`01_similarity.py`**
+   * Intuition behind embeddings & vector dimensions.
+   * Pure-Python implementation of Cosine Similarity ($\frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}$) using dot products and Euclidean norms.
+
+2. **`02_chunking.py`**
+   * Why chunking matters (avoiding information dilution and model limits).
+   * Sliding window text chunking with character/token overlap to preserve semantic continuity.
+
+3. **`03_tfidf_vectors.py`**
+   * Tokenization and vocabulary building.
+   * Full TF-IDF (Term Frequency - Inverse Document Frequency) implementation from scratch.
+   * Generating document vectors and measuring sparse similarity.
+
+4. **`04_naive_rag.py` (In Progress)**
+   * End-to-end Naive RAG pipeline:
+     $$\text{Raw Document} \to \text{Chunking} \to \text{Vector Ingestion} \to \text{Query Search} \to \text{Prompt Assembly} \to \text{Generation}$$
+
+---
+
+## 🛣️ Roadmap
+
+- [x] **Phase 1: Naive RAG** (Pure Python foundations)
+- [ ] **Phase 2: Advanced Retrieval** (Dense Embeddings, Vector DBs, BM25 Hybrid Search, Cross-Encoder Re-ranking)
+- [ ] **Phase 3: Agentic RAG** (Self-reflective loops, Query rewriting, Tool use)
+
