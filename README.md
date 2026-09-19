@@ -23,9 +23,10 @@ This phase explores the internal mechanics of retrieval systems without relying 
    * Full TF-IDF (Term Frequency - Inverse Document Frequency) implementation from scratch.
    * Generating document vectors and measuring sparse similarity.
 
-4. **`04_naive_rag.py` (In Progress)**
+4. **`04_naive_rag.py`**
    * End-to-end Naive RAG pipeline:
      $$\text{Raw Document} \to \text{Chunking} \to \text{Vector Ingestion} \to \text{Query Search} \to \text{Prompt Assembly} \to \text{Generation}$$
+   * Live Gemini model generation and grounding validation.
 
 ---
 
