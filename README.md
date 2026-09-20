@@ -41,6 +41,11 @@ This phase upgrades the retrieval engine from lexical (word count) matching to s
    * Solved the vocabulary mismatch flaw of Naive RAG by retrieving non-keyword-matching chunks via semantic space proximity.
    * End-to-end integration with the official `google-genai` SDK.
 
+2. **`02_multi_query.py` (Underway)**
+   * Multi-Query Expansion / Query Rewriting using Gemini.
+   * Solving single-angle / vague user queries by generating diverse search perspectives.
+   * Aggregation and deduplication across multi-query vector searches.
+
 ---
 
 ## 🛣️ Roadmap
