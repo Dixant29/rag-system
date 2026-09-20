@@ -37,8 +37,9 @@ This phase upgrades the retrieval engine from lexical (word count) matching to s
 ### Modules (Folder: `02_advanced_retrieval/`)
 
 1. **`01_dense_embeddings.py`**
-   * Dense Neural Semantic Embeddings using Google's `text-embedding-004` (768 dimensions).
-   * Solving the Out-of-Vocabulary (OOV) and semantic synonym gap that broke Naive RAG.
+   * Dense Neural Semantic Embeddings using Google's `gemini-embedding-001` (3,072 dimensions).
+   * Solved the vocabulary mismatch flaw of Naive RAG by retrieving non-keyword-matching chunks via semantic space proximity.
+   * End-to-end integration with the official `google-genai` SDK.
 
 ---
 

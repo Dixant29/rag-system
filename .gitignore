@@ -16,6 +16,7 @@ __pycache__/
 
 # Assistant lesson reference files
 ref/
+lessons/
 
 # Loose practice / scratch files in root
 *_practice_*.py
